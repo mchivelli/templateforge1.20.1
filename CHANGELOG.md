@@ -2,7 +2,7 @@
 
 All notable changes to The Warborn Origins will be documented in this file.
 
-## [0.1.0-alpha] - 2026-02-08
+## [1.0.0] - 2026-03-01
 
 ### Added
 

@@ -1,11 +1,11 @@
 # The Warborn Origins
 
-An alpha Origins addon for Minecraft Forge 1.20.1 that adds 14 playable races, each with unique powers, strengths, and weaknesses. Built as an addon for the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins-forge) mod by Apace100 and EdwinMindcraft.
+An Origins addon for Minecraft Forge 1.20.1 that adds 14 playable races, each with unique powers, strengths, and weaknesses. Built as an addon for the [Origins](https://www.curseforge.com/minecraft/mc-mods/origins-forge) mod by Apace100 and EdwinMindcraft.
 
 ![Minecraft 1.20.1](https://img.shields.io/badge/Minecraft-1.20.1-green)
 ![Forge](https://img.shields.io/badge/Loader-Forge-orange)
 ![Origins](https://img.shields.io/badge/Requires-Origins-blue)
-![Status](https://img.shields.io/badge/Status-Alpha-yellow)
+![Version](https://img.shields.io/badge/Version-1.0-brightgreen)
 
 ---
 
