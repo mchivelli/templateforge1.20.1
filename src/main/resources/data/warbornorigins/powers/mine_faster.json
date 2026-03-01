@@ -1,0 +1,17 @@
+{
+  "type": "origins:attribute",
+  "name": "Mine Faster",
+  "description": "Dwarven heritage grants you superior mining speed.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/positive.png",
+      "text": "+30% mining speed (Haste-like bonus)"
+    }
+  ],
+  "modifier": {
+    "attribute": "forge:block_reach",
+    "value": 0.3,
+    "operation": "multiply_base"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "origins:modify_damage_taken",
+  "name": "Blast Vulnerable",
+  "description": "Your small frame makes you especially vulnerable to explosions.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/negative.png",
+      "text": "+20% damage from explosions"
+    }
+  ],
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "value": 0.2
+  },
+  "damage_condition": {
+    "type": "origins:explosive"
+  }
+}

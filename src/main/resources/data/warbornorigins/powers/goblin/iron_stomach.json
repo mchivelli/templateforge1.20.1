@@ -1,0 +1,20 @@
+{
+  "type": "origins:multiple",
+  "name": "Iron Stomach",
+  "description": "Your strong Goblin stomach makes you immune to Hunger and Poison effects.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/positive.png",
+      "text": "Immune to Hunger and Poison effects"
+    }
+  ],
+  "hunger_immunity": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:hunger"
+  },
+  "poison_immunity": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:poison"
+  }
+}

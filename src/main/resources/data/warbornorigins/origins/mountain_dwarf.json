@@ -1,0 +1,19 @@
+{
+  "powers": [
+    "warbornorigins:mountain_dwarf/mountain_stature",
+    "warbornorigins:mountain_dwarf/hardy",
+    "warbornorigins:mountain_dwarf/fortune_born",
+    "warbornorigins:mountain_dwarf/cannot_swim",
+    "warbornorigins:mountain_dwarf/sun_sensitivity",
+    "warbornorigins:mountain_dwarf/dwarven_brew",
+    "warbornorigins:mine_faster"
+  ],
+  "icon": {
+    "item": "minecraft:paper",
+    "tag": "{CustomModelData:1004}"
+  },
+  "order": 7,
+  "impact": 2,
+  "name": "Mountain Dwarf",
+  "description": "Stout miners born deep under the mountains. Their hardy constitution grants extra health and mining fortune, but they sink in water and burn in sunlight. A swig of dwarven brew heals their wounds."
+}

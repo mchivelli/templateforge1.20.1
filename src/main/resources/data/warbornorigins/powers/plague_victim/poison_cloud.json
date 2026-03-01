@@ -1,0 +1,77 @@
+{
+  "type": "origins:active_self",
+  "name": "Poison Cloud",
+  "description": "Release a poisonous cloud that damages nearby living creatures.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/active.png",
+      "text": "Ability: Poison nearby living creatures for 5s and deal 3 magic damage. 25s cooldown."
+    }
+  ],
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:area_of_effect",
+        "radius": 4.0,
+        "shape": "sphere",
+        "bientity_action": {
+          "type": "origins:target_action",
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:execute_command",
+                "command": "damage @s 3 minecraft:magic"
+              },
+              {
+                "type": "origins:apply_effect",
+                "effect": {
+                  "effect": "minecraft:poison",
+                  "duration": 100,
+                  "amplifier": 1,
+                  "is_ambient": false,
+                  "show_particles": true
+                }
+              }
+            ]
+          }
+        },
+        "bientity_condition": {
+          "type": "origins:target_condition",
+          "condition": {
+            "type": "origins:and",
+            "conditions": [
+              {
+                "type": "origins:living"
+              },
+              {
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:player",
+                "inverted": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "particle minecraft:entity_effect ~ ~1 ~ 1.0 0.5 1.0 0.05 35 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "playsound minecraft:block.brewing_stand.brew player @a ~ ~ ~ 0.8 0.7"
+      }
+    ]
+  },
+  "cooldown": 500,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/resource_bar.png",
+    "bar_index": 9
+  },
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "type": "origins:multiple",
+  "name": "Flower Affinity",
+  "description": "Flowers planted nearby grant you passive bonuses. The flowers must be growing in the ground within 8 blocks.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/active.png",
+      "text": "Planted flowers within 8 blocks grant passive effects"
+    }
+  ],
+  "dandelion_effect": {
+    "type": "origins:action_over_time",
+    "interval": 60,
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "effect give @s minecraft:speed 4 0 true"
+    },
+    "condition": {
+      "type": "origins:block_in_radius",
+      "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:dandelion"
+      },
+      "radius": 8,
+      "shape": "cube",
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  },
+  "poppy_effect": {
+    "type": "origins:action_over_time",
+    "interval": 60,
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "effect give @s minecraft:strength 4 0 true"
+    },
+    "condition": {
+      "type": "origins:block_in_radius",
+      "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:poppy"
+      },
+      "radius": 8,
+      "shape": "cube",
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  },
+  "blue_orchid_effect": {
+    "type": "origins:action_over_time",
+    "interval": 60,
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "effect give @s minecraft:water_breathing 4 0 true"
+    },
+    "condition": {
+      "type": "origins:block_in_radius",
+      "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:blue_orchid"
+      },
+      "radius": 8,
+      "shape": "cube",
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  },
+  "allium_effect": {
+    "type": "origins:action_over_time",
+    "interval": 60,
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "effect give @s minecraft:fire_resistance 4 0 true"
+    },
+    "condition": {
+      "type": "origins:block_in_radius",
+      "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:allium"
+      },
+      "radius": 8,
+      "shape": "cube",
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  },
+  "azure_bluet_effect": {
+    "type": "origins:action_over_time",
+    "interval": 60,
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "effect give @s minecraft:luck 4 0 true"
+    },
+    "condition": {
+      "type": "origins:block_in_radius",
+      "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:azure_bluet"
+      },
+      "radius": 8,
+      "shape": "cube",
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  },
+  "cornflower_effect": {
+    "type": "origins:action_over_time",
+    "interval": 60,
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "effect give @s minecraft:jump_boost 4 0 true"
+    },
+    "condition": {
+      "type": "origins:block_in_radius",
+      "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:cornflower"
+      },
+      "radius": 8,
+      "shape": "cube",
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  },
+  "lily_of_valley_effect": {
+    "type": "origins:action_over_time",
+    "interval": 60,
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "effect give @s minecraft:regeneration 4 0 true"
+    },
+    "condition": {
+      "type": "origins:block_in_radius",
+      "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:lily_of_the_valley"
+      },
+      "radius": 8,
+      "shape": "cube",
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "powers": [],
+  "icon": {
+    "item": "minecraft:paper",
+    "tag": "{CustomModelData:1010}"
+  },
+  "order": 11,
+  "impact": 0,
+  "name": "Human",
+  "description": "Classic Minecraft adventurers with no special advantages or disadvantages."
+}

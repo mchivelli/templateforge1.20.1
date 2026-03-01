@@ -1,0 +1,37 @@
+{
+  "type": "origins:modify_damage_taken",
+  "name": "Flammable",
+  "description": "You take increased damage from fire and flames.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/negative.png",
+      "text": "Take 20% more damage from fire and lava"
+    }
+  ],
+  "modifier": {
+    "name": "Flammable fire damage increase",
+    "value": 0.2,
+    "operation": "multiply_base"
+  },
+  "damage_condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:fire"
+      },
+      {
+        "type": "origins:name",
+        "name": "onFire"
+      },
+      {
+        "type": "origins:name",
+        "name": "inFire"
+      },
+      {
+        "type": "origins:name",
+        "name": "lava"
+      }
+    ]
+  }
+}

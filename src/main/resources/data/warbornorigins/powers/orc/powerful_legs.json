@@ -1,0 +1,17 @@
+{
+  "type": "origins:attribute",
+  "name": "Powerful Legs",
+  "description": "Your powerful Orc legs let you jump higher than other races, reaching up to 2 blocks.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/positive.png",
+      "text": "Jump up to 2 blocks high"
+    }
+  ],
+  "modifier": {
+    "attribute": "minecraft:generic.jump_strength",
+    "value": 0.5,
+    "operation": "multiply_base"
+  }
+}

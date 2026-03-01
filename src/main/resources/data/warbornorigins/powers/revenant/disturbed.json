@@ -1,0 +1,7 @@
+{
+  "type": "origins:prevent_sleep",
+  "name": "Disturbed",
+  "description": "Rest eludes the dead. You cannot sleep.",
+  "message": "text.warbornorigins.revenant.no_sleep",
+  "set_spawn_point": true
+}

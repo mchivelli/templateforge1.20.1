@@ -1,0 +1,17 @@
+{
+  "powers": [
+    "warbornorigins:plague_victim/undeadge",
+    "warbornorigins:plague_victim/plague_immunity",
+    "warbornorigins:plague_victim/contagious",
+    "warbornorigins:plague_victim/insomniac",
+    "warbornorigins:plague_victim/poison_cloud"
+  ],
+  "icon": {
+    "item": "minecraft:paper",
+    "tag": "{CustomModelData:1014}"
+  },
+  "order": 12,
+  "impact": 2,
+  "name": "Plague Victim",
+  "description": "Rotting carriers of a cruel affliction. Undead leave them alone and poison cannot harm them, but villagers shun them and sleep is impossible."
+}

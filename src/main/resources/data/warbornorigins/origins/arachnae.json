@@ -1,0 +1,20 @@
+{
+  "powers": [
+    "warbornorigins:arachnae/arachnid_stature",
+    "warbornorigins:arachnae/wall_climber",
+    "warbornorigins:arachnae/arthropod_bane",
+    "warbornorigins:arachnae/spider_friend",
+    "warbornorigins:arachnae/master_of_webs",
+    "warbornorigins:arachnae/web_walker",
+    "warbornorigins:arachnae/light_descent",
+    "warbornorigins:carnivore"
+  ],
+  "icon": {
+    "item": "minecraft:paper",
+    "tag": "{CustomModelData:1002}"
+  },
+  "order": 4,
+  "impact": 3,
+  "name": "Arachnae",
+  "description": "Tall spider-folk who scale walls and trap enemies in webs. Spiders see them as kin, but they are highly vulnerable to the Bane of Arthropods enchantment."
+}

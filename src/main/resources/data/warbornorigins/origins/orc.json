@@ -1,0 +1,19 @@
+{
+  "powers": [
+    "warbornorigins:orc/orc_stature",
+    "warbornorigins:orc/battering_ram",
+    "warbornorigins:orc/ravenous",
+    "warbornorigins:orc/powerful_legs",
+    "warbornorigins:orc/dashing_supremacy",
+    "warbornorigins:orc/natural_armor",
+    "warbornorigins:carnivore"
+  ],
+  "icon": {
+    "item": "minecraft:paper",
+    "tag": "{CustomModelData:1003}"
+  },
+  "order": 5,
+  "impact": 3,
+  "name": "Orc",
+  "description": "Created by goblins as brutish slaves, Orcs cast off their chains. Towering and powerful, they embody raw fury, but their goblin blood curses them with an insatiable hunger and restless anger that drives them ever toward conflict."
+}

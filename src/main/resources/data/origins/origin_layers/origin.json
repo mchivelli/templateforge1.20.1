@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "origins": [
+    "warbornorigins:wood_elves",
+    "warbornorigins:moon_elves",
+    "warbornorigins:high_elves",
+    "warbornorigins:goblin",
+    "warbornorigins:arachnae",
+    "warbornorigins:orc",
+    "warbornorigins:dark_dwarf",
+    "warbornorigins:mountain_dwarf",
+    "warbornorigins:wild_dwarf",
+    "warbornorigins:siren",
+    "warbornorigins:piglin_kind",
+    "warbornorigins:human",
+    "warbornorigins:plague_victim",
+    "warbornorigins:revenant"
+  ]
+}

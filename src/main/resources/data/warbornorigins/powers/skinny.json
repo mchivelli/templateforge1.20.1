@@ -1,0 +1,18 @@
+{
+  "type": "origins:attribute",
+  "name": "Skinny",
+  "description": "Your slender elven frame gives you slightly less health.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/info.png",
+      "text": "Slender elven physique"
+    }
+  ],
+  "modifier": {
+    "name": "Skinny health reduction",
+    "attribute": "minecraft:generic.max_health",
+    "value": 0.0,
+    "operation": "addition"
+  }
+}

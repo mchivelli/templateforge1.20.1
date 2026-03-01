@@ -1,0 +1,7 @@
+{
+  "type": "origins:prevent_sleep",
+  "name": "Insomniac",
+  "description": "Relentless pain keeps you from sleeping.",
+  "message": "text.warbornorigins.plague_victim.no_sleep",
+  "set_spawn_point": true
+}

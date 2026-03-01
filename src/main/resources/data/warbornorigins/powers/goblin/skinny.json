@@ -1,0 +1,17 @@
+{
+  "type": "origins:attribute",
+  "name": "Skinny",
+  "description": "Your small Goblin frame has less health than larger races.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/negative.png",
+      "text": "-4 max health"
+    }
+  ],
+  "modifier": {
+    "attribute": "minecraft:generic.max_health",
+    "value": -4,
+    "operation": "addition"
+  }
+}

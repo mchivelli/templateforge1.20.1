@@ -1,0 +1,51 @@
+{
+  "type": "origins:multiple",
+  "name": "Carnivore",
+  "description": "Your strong stomach craves meat. Eating plant-based food makes you sick.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/negative.png",
+      "text": "Eating vegetarian food causes Nausea, Weakness, and Hunger"
+    }
+  ],
+  "veggie_sickness": {
+    "type": "origins:action_on_item_use",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "warbornorigins:vegetarian_food"
+      }
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "effect give @s minecraft:nausea 15 1"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "effect give @s minecraft:weakness 10 1"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "effect give @s minecraft:hunger 10 2"
+        }
+      ]
+    }
+  },
+  "veggie_tooltip": {
+    "type": "origins:tooltip",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "warbornorigins:vegetarian_food"
+      }
+    },
+    "text": [
+      { "text": "Carnivore: ", "color": "red", "bold": true },
+      { "text": "Eating this will make you sick!", "color": "dark_red" }
+    ]
+  }
+}

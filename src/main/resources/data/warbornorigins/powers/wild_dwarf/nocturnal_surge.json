@@ -1,0 +1,96 @@
+{
+  "type": "origins:multiple",
+  "name": "Nocturnal Surge",
+  "description": "At night, you become faster but weaker. Holding a shield counters the weakness but removes the speed bonus.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/info.png",
+      "text": "Night: +20% speed, Weakness I. Shield negates weakness but also removes speed."
+    }
+  ],
+  "night_speed": {
+    "type": "origins:conditioned_attribute",
+    "tick_rate": 20,
+    "modifier": {
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "multiply_base",
+      "value": 0.2
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:time_of_day",
+          "comparison": ">=",
+          "compare_to": 13000
+        },
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:equipped_item",
+              "equipment_slot": "offhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": { "item": "minecraft:shield" }
+              },
+              "inverted": true
+            },
+            {
+              "type": "origins:equipped_item",
+              "equipment_slot": "mainhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": { "item": "minecraft:shield" }
+              },
+              "inverted": true
+            }
+          ],
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "night_weakness": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "effect give @s minecraft:weakness 4 0 true"
+    },
+    "interval": 60,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:time_of_day",
+          "comparison": ">=",
+          "compare_to": 13000
+        },
+        {
+          "type": "origins:and",
+          "conditions": [
+            {
+              "type": "origins:equipped_item",
+              "equipment_slot": "offhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": { "item": "minecraft:shield" }
+              },
+              "inverted": true
+            },
+            {
+              "type": "origins:equipped_item",
+              "equipment_slot": "mainhand",
+              "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": { "item": "minecraft:shield" }
+              },
+              "inverted": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

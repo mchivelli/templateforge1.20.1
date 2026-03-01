@@ -1,0 +1,58 @@
+{
+  "type": "origins:active_self",
+  "name": "Revenance",
+  "description": "Summon undead servants from the grave to fight at your side.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/active.png",
+      "text": "Ability: Summon a Zombie and Skeleton ally for battle. 35s cooldown."
+    }
+  ],
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "team add warborn_revenant"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "team join warborn_revenant @s"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "summon minecraft:zombie ~1 ~ ~ {Tags:[\"warborn_revenance\"],PersistenceRequired:0b,CanPickUpLoot:0b}"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "summon minecraft:skeleton ~-1 ~ ~ {Tags:[\"warborn_revenance\"],PersistenceRequired:0b,CanPickUpLoot:0b}"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "team join warborn_revenant @e[tag=warborn_revenance,distance=..8,sort=nearest,limit=2]"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "effect give @e[tag=warborn_revenance,distance=..8,sort=nearest,limit=2] minecraft:resistance 20 0 true"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "particle minecraft:soul ~ ~1 ~ 1.5 0.7 1.5 0.02 40 force"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "playsound minecraft:block.soul_sand.place hostile @a ~ ~ ~ 0.8 0.9"
+      }
+    ]
+  },
+  "cooldown": 700,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/resource_bar.png",
+    "bar_index": 6
+  },
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  }
+}

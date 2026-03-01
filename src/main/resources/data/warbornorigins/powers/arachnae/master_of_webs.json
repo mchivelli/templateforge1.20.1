@@ -1,0 +1,111 @@
+{
+  "type": "origins:multiple",
+  "name": "Master of Webs",
+  "description": "Trap enemies in cobwebs when hitting them. You can also harvest string from cobwebs and move freely through them.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/active.png",
+      "text": "Ability: Hitting enemies places cobwebs on them (8s cooldown). Free movement in webs."
+    }
+  ],
+  "web_trap_cooldown": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 160,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 4,
+      "condition": {
+        "type": "origins:resource",
+        "resource": "*:*_web_trap_cooldown",
+        "comparison": ">",
+        "compare_to": 0
+      }
+    }
+  },
+  "cooldown_tick": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_web_trap_cooldown",
+      "change": -4
+    },
+    "interval": 4,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:*_web_trap_cooldown",
+      "comparison": ">",
+      "compare_to": 0
+    }
+  },
+  "web_on_hit": {
+    "type": "origins:action_on_hit",
+    "bientity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:target_action",
+          "action": {
+            "type": "origins:execute_command",
+            "command": "setblock ~ ~ ~ minecraft:cobweb"
+          }
+        },
+        {
+          "type": "origins:actor_action",
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:change_resource",
+                "resource": "warbornorigins:arachnae/master_of_webs_web_trap_cooldown",
+                "change": 160
+              },
+              {
+                "type": "origins:execute_command",
+                "command": "playsound minecraft:entity.spider.ambient hostile @a ~ ~ ~ 0.6 1.4"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "bientity_condition": {
+      "type": "origins:actor_condition",
+      "condition": {
+        "type": "origins:resource",
+        "resource": "warbornorigins:arachnae/master_of_webs_web_trap_cooldown",
+        "comparison": "<=",
+        "compare_to": 0
+      }
+    },
+    "cooldown": 1,
+    "damage_condition": {
+      "type": "origins:amount",
+      "comparison": ">",
+      "compare_to": 0.0
+    }
+  },
+  "web_immunity": {
+    "type": "origins:phasing",
+    "block_condition": {
+      "type": "origins:block",
+      "block": "minecraft:cobweb"
+    },
+    "render_type": "none",
+    "phase_down_condition": {
+      "type": "origins:constant",
+      "value": false
+    }
+  },
+  "web_walk_speed": {
+    "type": "origins:modify_block_render",
+    "block_condition": {
+      "type": "origins:block",
+      "block": "minecraft:cobweb"
+    },
+    "predicate": "cobweb"
+  }
+}

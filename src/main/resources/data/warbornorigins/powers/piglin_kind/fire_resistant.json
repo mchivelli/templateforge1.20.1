@@ -1,0 +1,17 @@
+{
+  "type": "origins:action_over_time",
+  "name": "Fire Resistant",
+  "description": "Born of the Nether, fire cannot harm you. You are immune to all fire and lava damage.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/positive.png",
+      "text": "Permanent Fire Resistance"
+    }
+  ],
+  "entity_action": {
+    "type": "origins:execute_command",
+    "command": "effect give @s minecraft:fire_resistance 14 0 true"
+  },
+  "interval": 200
+}

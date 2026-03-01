@@ -1,0 +1,59 @@
+{
+  "type": "origins:action_on_hit",
+  "name": "Essence Extraction",
+  "description": "Striking living foes siphons a fragment of their life essence, empowering you with brief absorption.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/positive.png",
+      "text": "On hit: Deal +1 magic damage to living targets and gain Absorption I for 3s"
+    }
+  ],
+  "bientity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:target_action",
+        "action": {
+          "type": "origins:execute_command",
+          "command": "damage @s 1 minecraft:magic"
+        }
+      },
+      {
+        "type": "origins:actor_action",
+        "action": {
+          "type": "origins:apply_effect",
+          "effect": {
+            "effect": "minecraft:absorption",
+            "duration": 60,
+            "amplifier": 0,
+            "is_ambient": true,
+            "show_particles": false
+          }
+        }
+      }
+    ]
+  },
+  "bientity_condition": {
+    "type": "origins:target_condition",
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:living"
+        },
+        {
+          "type": "origins:entity_group",
+          "group": "undead",
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "damage_condition": {
+    "type": "origins:amount",
+    "comparison": ">",
+    "compare_to": 0.0
+  },
+  "cooldown": 10
+}

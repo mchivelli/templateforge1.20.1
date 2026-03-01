@@ -1,0 +1,20 @@
+{
+  "type": "origins:multiple",
+  "name": "Haggler",
+  "description": "Villagers distrust Goblins and charge higher prices. Your reputation starts low.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/negative.png",
+      "text": "Villager trade prices are significantly higher"
+    }
+  ],
+  "bad_reputation": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "effect give @s minecraft:bad_omen 4 0 true"
+    },
+    "interval": 80
+  }
+}

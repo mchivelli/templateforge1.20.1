@@ -1,0 +1,25 @@
+{
+  "type": "origins:climbing",
+  "name": "Wall Climber",
+  "description": "Your spider-like nature allows you to climb walls effortlessly. Sneak against a wall to hold your position.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/positive.png",
+      "text": "Climb walls by walking into them. Sneak to hold position."
+    }
+  ],
+  "allow_holding": true,
+  "hold_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:sneaking"
+      },
+      {
+        "type": "origins:moving",
+        "inverted": true
+      }
+    ]
+  }
+}

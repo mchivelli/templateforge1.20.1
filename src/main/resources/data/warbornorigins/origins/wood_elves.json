@@ -1,0 +1,19 @@
+{
+  "powers": [
+    "warbornorigins:elven_stature",
+    "warbornorigins:natures_veil",
+    "warbornorigins:flammable",
+    "warbornorigins:light_on_feet",
+    "warbornorigins:flower_affinity",
+    "warbornorigins:skinny",
+    "warbornorigins:vegetarian"
+  ],
+  "icon": {
+    "item": "minecraft:paper",
+    "tag": "{CustomModelData:1007}"
+  },
+  "order": 0,
+  "impact": 2,
+  "name": "Wood Elves",
+  "description": "Born of ancient forests, Wood Elves are graceful hunters. They move silently through tall grass, vanishing from sight. Flowers grant them passive gifts, and their nimble frames absorb falls easily—though fire remains their greatest fear."
+}

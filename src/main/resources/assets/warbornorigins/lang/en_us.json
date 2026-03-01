@@ -1,0 +1,288 @@
+{
+  "origin.warbornorigins.wood_elves.name": "Wood Elves",
+  "origin.warbornorigins.wood_elves.description": "Nature is your true friend, and a true friend always has your back. You are nimble and attuned to the forest.",
+  
+  "power.warbornorigins.elven_stature.name": "Elven Stature",
+  "power.warbornorigins.elven_stature.description": "Wood Elves stand taller than humans (1.2x scale, persists through respawn). Configurable in warbornorigins-common.toml",
+  
+  "power.warbornorigins.natures_veil.name": "Nature's Veil",
+  "power.warbornorigins.natures_veil.description": "Vegetation hides you (invisibility) and grants night vision that lingers 2s after leaving. Configurable in warbornorigins-common.toml",
+  
+  "power.warbornorigins.flammable.name": "Flammable",
+  "power.warbornorigins.flammable.description": "Your connection to nature makes you vulnerable to fire. You take 50% more damage from fire, lava, and flames.",
+  
+  "power.warbornorigins.light_on_feet.name": "Light on Feet",
+  "power.warbornorigins.light_on_feet.description": "Your nimble elven nature allows you to land gracefully. You take 50% less fall damage.",
+  
+  "power.warbornorigins.skinny.name": "Skinny",
+  "power.warbornorigins.skinny.description": "Your slender elven frame. You have a typical elven physique.",
+  
+  "power.warbornorigins.flower_affinity.name": "Flower Affinity",
+  "power.warbornorigins.flower_affinity.description": "Hold 3+ flowers for bonuses. Max 2 effects (priority-based). Command: /origin resource set @s warbornorigins:flower_affinity_max_effects [0-10]",
+
+  "power.warbornorigins.vegetarian.name": "Vegetarian",
+  "power.warbornorigins.vegetarian.description": "Your elven nature rejects the consumption of meat. Eating meat causes Nausea, Poison, and Hunger.",
+
+  "origin.warbornorigins.moon_elves.name": "Moon Elves",
+  "origin.warbornorigins.moon_elves.description": "Children of the night, Moon Elves are deadly assassins who meld with shadows. Their lunar-touched skin burns in water, but under moonlight they become truly invisible.",
+
+  "power.warbornorigins.moon_elf/lunar_stature.name": "Lunar Stature",
+  "power.warbornorigins.moon_elf/lunar_stature.description": "Moon Elves are tall and slender, with an otherworldly grace. (1.15x height, 0.9x width via Pehkui)",
+
+  "power.warbornorigins.moon_elf/nimble.name": "Nimble",
+  "power.warbornorigins.moon_elf/nimble.description": "Your dexterous nature gives you a 15% chance to dodge attacks and +10% movement speed.",
+
+  "power.warbornorigins.moon_elf/moonlit_veil.name": "Moonlit Veil",
+  "power.warbornorigins.moon_elf/moonlit_veil.description": "You become invisible while sneaking at night. Stealth meter drains while moving invisibly and refills when not sneaking.",
+
+  "power.warbornorigins.moon_elf/night_strike.name": "Night Strike",
+  "power.warbornorigins.moon_elf/night_strike.description": "Attacking from stealth at night deals 2x bonus damage but breaks your invisibility.",
+
+  "power.warbornorigins.moon_elf/assassins_focus.name": "Assassin's Focus",
+  "power.warbornorigins.moon_elf/assassins_focus.description": "You deal 30% less damage when your stealth meter is not full. Stay patient for maximum lethality.",
+
+  "power.warbornorigins.moon_elf/hydrophobia.name": "Hydrophobia",
+  "power.warbornorigins.moon_elf/hydrophobia.description": "Water burns your lunar-touched skin. You take damage in water and rain. Aqua Affinity enchantment on helmet negates this.",
+
+  "power.warbornorigins.moon_elf/fragile.name": "Fragile",
+  "power.warbornorigins.moon_elf/fragile.description": "Your slender elven frame is more susceptible to physical harm. -6 max health, +15% physical damage taken.",
+
+  "power.warbornorigins.moon_elf/ethereal.name": "Ethereal",
+  "power.warbornorigins.moon_elf/ethereal.description": "Your lunar heritage gives you a faint, otherworldly glow.",
+
+  "origin.warbornorigins.high_elves.name": "High Elves",
+  "origin.warbornorigins.high_elves.description": "Masters of the arcane arts, High Elves trade physical resilience for magical prowess. Their innate talent makes them formidable spellcasters, but heavy armor encumbers their graceful forms.",
+
+  "power.warbornorigins.high_elf/arcane_stature.name": "Arcane Stature",
+  "power.warbornorigins.high_elf/arcane_stature.description": "High Elves are tall and slender, carrying themselves with regal poise. (1.15x height, 0.9x width via Pehkui)",
+
+  "power.warbornorigins.high_elf/fragile.name": "Fragile",
+  "power.warbornorigins.high_elf/fragile.description": "Your delicate elven frame has less vitality and is more susceptible to physical blows. -4 max health, +20% physical damage taken.",
+
+  "power.warbornorigins.high_elf/arcane_mastery.name": "Arcane Mastery",
+  "power.warbornorigins.high_elf/arcane_mastery.description": "Your innate magical talent grants +20% magic resistance and +25% magic damage dealt. Works with Iron's Spells and other magic mods.",
+
+  "power.warbornorigins.high_elf/encumbered.name": "Encumbered",
+  "power.warbornorigins.high_elf/encumbered.description": "Heavy armor (iron, diamond, netherite) slows you by 10% per piece. Feather Falling enchantment on boots negates all penalties.",
+
+  "power.warbornorigins.high_elf/arcane_surge.name": "Arcane Surge",
+  "power.warbornorigins.high_elf/arcane_surge.description": "Channel innate arcane energy for Regeneration II and Resistance I. Hold a magical catalyst (Amethyst Shard, Ender Pearl, Blaze Rod, Nether Star, End Crystal) to activate. 20s cooldown.",
+
+  "power.warbornorigins.high_elf/ethereal.name": "Ethereal",
+  "power.warbornorigins.high_elf/ethereal.description": "Your arcane bloodline gives you a faint magical shimmer.",
+
+  "power.warbornorigins.carnivore.name": "Carnivore",
+  "power.warbornorigins.carnivore.description": "Your strong stomach craves meat. Eating plant-based food causes Nausea, Weakness, and Hunger.",
+
+  "origin.warbornorigins.goblin.name": "Goblin",
+  "origin.warbornorigins.goblin.description": "Small and cunning, Goblins are obsessed with gold and treasure. Their strong stomachs and nimble fingers make them excellent scavengers, though villagers charge them dearly.",
+
+  "power.warbornorigins.goblin/goblin_stature.name": "Goblin Stature",
+  "power.warbornorigins.goblin/goblin_stature.description": "Goblins are short and skinny, able to fit into tight spaces. (0.75x height, 0.85x width via Pehkui)",
+
+  "power.warbornorigins.goblin/gold_affinity.name": "Gold Affinity",
+  "power.warbornorigins.goblin/gold_affinity.description": "Gold gear performs at netherite tier for you. Gold weapons: +4 attack damage. Gold armor: +4 armor, +2 toughness.",
+
+  "power.warbornorigins.goblin/haggler.name": "Haggler",
+  "power.warbornorigins.goblin/haggler.description": "Villagers distrust Goblins and charge higher prices.",
+
+  "power.warbornorigins.goblin/iron_stomach.name": "Iron Stomach",
+  "power.warbornorigins.goblin/iron_stomach.description": "Your strong Goblin stomach makes you immune to Hunger and Poison effects.",
+
+  "power.warbornorigins.goblin/lucky_fingers.name": "Lucky Fingers",
+  "power.warbornorigins.goblin/lucky_fingers.description": "Permanent Luck I. Ability: Activate Luck III burst for 15s (30s cooldown).",
+
+  "power.warbornorigins.goblin/skinny.name": "Skinny",
+  "power.warbornorigins.goblin/skinny.description": "Your small Goblin frame has less health than larger races. -4 max health.",
+
+  "origin.warbornorigins.arachnae.name": "Arachnae",
+  "origin.warbornorigins.arachnae.description": "Tall spider-folk who can scale walls and trap enemies in webs. Spiders see them as kin, but the Bane of Arthropods enchantment is their greatest weakness.",
+
+  "power.warbornorigins.arachnae/arachnid_stature.name": "Arachnid Stature",
+  "power.warbornorigins.arachnae/arachnid_stature.description": "Arachnae are tall with long, spindly limbs. (1.2x height, 0.95x width via Pehkui)",
+
+  "power.warbornorigins.arachnae/wall_climber.name": "Wall Climber",
+  "power.warbornorigins.arachnae/wall_climber.description": "Your spider-like nature allows you to climb walls. Hold sneak to cling in place.",
+
+  "power.warbornorigins.arachnae/arthropod_bane.name": "Arthropod Bane",
+  "power.warbornorigins.arachnae/arthropod_bane.description": "Your arachnid nature makes you vulnerable. +50% damage from Bane of Arthropods weapons.",
+
+  "power.warbornorigins.arachnae/spider_friend.name": "Spider Friend",
+  "power.warbornorigins.arachnae/spider_friend.description": "Spiders and Cave Spiders recognize you as one of their own and will not attack you.",
+
+  "power.warbornorigins.arachnae/master_of_webs.name": "Master of Webs",
+  "power.warbornorigins.arachnae/master_of_webs.description": "Ability: Hitting enemies places cobwebs on them (8s cooldown). You move freely through webs.",
+
+  "power.warbornorigins.arachnae/web_walker.name": "Web Walker",
+  "power.warbornorigins.arachnae/web_walker.description": "You move freely through cobwebs without being slowed.",
+
+  "origin.warbornorigins.orc.name": "Orc",
+  "origin.warbornorigins.orc.description": "Towering brutes with incredible strength. Orcs ram through enemies while sprinting and can leap great heights, but their massive bodies burn through food rapidly.",
+
+  "power.warbornorigins.orc/orc_stature.name": "Orc Stature",
+  "power.warbornorigins.orc/orc_stature.description": "Orcs are tall and broad, towering over most other races. (1.25x height, 1.15x width via Pehkui)",
+
+  "power.warbornorigins.orc/battering_ram.name": "Battering Ram",
+  "power.warbornorigins.orc/battering_ram.description": "While sprinting, you knock enemies back with +100% knockback and deal +30% attack damage.",
+
+  "power.warbornorigins.orc/ravenous.name": "Ravenous",
+  "power.warbornorigins.orc/ravenous.description": "Your massive body burns through food quickly. Hunger depletes 50% faster.",
+
+  "power.warbornorigins.orc/powerful_legs.name": "Powerful Legs",
+  "power.warbornorigins.orc/powerful_legs.description": "Your powerful Orc legs let you jump higher than other races, reaching up to 2 blocks.",
+
+  "power.warbornorigins.orc/dashing_supremacy.name": "Dashing Supremacy",
+  "power.warbornorigins.orc/dashing_supremacy.description": "Ability: Charge forward with Speed III, Resistance I, and deal 4 damage + Slowness to nearby enemies (15s cooldown, must be sprinting).",
+
+  "power.warbornorigins.orc/tough_skin.name": "Tough Skin",
+  "power.warbornorigins.orc/tough_skin.description": "Your thick Orc hide provides +4 natural armor, but slows you by 10%.",
+
+  "power.warbornorigins.mine_faster.name": "Mine Faster",
+  "power.warbornorigins.mine_faster.description": "Dwarven heritage grants you +30% mining speed.",
+
+  "origin.warbornorigins.dark_dwarf.name": "Dark Dwarf",
+  "origin.warbornorigins.dark_dwarf.description": "Cursed dwarves bound to soul fire. Their tainted blood nullifies all potions and makes Smite devastatingly effective against them. Near soul light, they slowly mend. Their chains of death pierce all who stand in their way.",
+
+  "power.warbornorigins.dark_dwarf/dark_stature.name": "Dark Stature",
+  "power.warbornorigins.dark_dwarf/dark_stature.description": "Dark Dwarves are short and stocky, forged in the depths below. (0.85x height, 1.05x width via Pehkui)",
+
+  "power.warbornorigins.dark_dwarf/soul_mending.name": "Soul Mending",
+  "power.warbornorigins.dark_dwarf/soul_mending.description": "You slowly heal when near soul light sources (Soul Torches, Soul Lanterns, Soul Campfires). Regeneration I within 8 blocks.",
+
+  "power.warbornorigins.dark_dwarf/cursed.name": "Cursed",
+  "power.warbornorigins.dark_dwarf/cursed.description": "A dark curse clings to your soul. Smite-enchanted weapons deal +75% damage to you, far worse than Sharpness.",
+
+  "power.warbornorigins.dark_dwarf/potion_immunity.name": "Potion Immunity",
+  "power.warbornorigins.dark_dwarf/potion_immunity.description": "Your cursed blood nullifies all potion effects, both beneficial and harmful.",
+
+  "power.warbornorigins.dark_dwarf/chains_of_death.name": "Chains of Death",
+  "power.warbornorigins.dark_dwarf/chains_of_death.description": "Ability: Spectral chains pierce enemies ahead, inflicting Wither II and 4 damage. Hold Shift for explosive variant (6 damage + explosion). 20s cooldown.",
+
+  "origin.warbornorigins.mountain_dwarf.name": "Mountain Dwarf",
+  "origin.warbornorigins.mountain_dwarf.description": "Stout miners born deep under the mountains. Their hardy constitution grants extra health and a fortune bonus when mining, but they sink in water and burn in sunlight.",
+
+  "power.warbornorigins.mountain_dwarf/mountain_stature.name": "Mountain Stature",
+  "power.warbornorigins.mountain_dwarf/mountain_stature.description": "Mountain Dwarves are short and broad, built like the stone they mine. (0.8x height, 1.1x width via Pehkui)",
+
+  "power.warbornorigins.mountain_dwarf/hardy.name": "Hardy",
+  "power.warbornorigins.mountain_dwarf/hardy.description": "Your stocky Mountain Dwarf build grants you +6 max health (3 extra hearts).",
+
+  "power.warbornorigins.mountain_dwarf/fortune_born.name": "Fortune Born",
+  "power.warbornorigins.mountain_dwarf/fortune_born.description": "Your dwarven instincts reveal hidden riches. Permanent Luck II (affects ore drops and loot tables).",
+
+  "power.warbornorigins.mountain_dwarf/cannot_swim.name": "Dense Body",
+  "power.warbornorigins.mountain_dwarf/cannot_swim.description": "Your heavy dwarven body sinks like a stone. You cannot swim and move slowly in water.",
+
+  "power.warbornorigins.mountain_dwarf/sun_sensitivity.name": "Sun Sensitivity",
+  "power.warbornorigins.mountain_dwarf/sun_sensitivity.description": "Sunlight burns you (1 damage every 2s). Wearing any helmet protects you.",
+
+  "power.warbornorigins.mountain_dwarf/dwarven_brew.name": "Dwarven Brew",
+  "power.warbornorigins.mountain_dwarf/dwarven_brew.description": "Ability: Take a hearty swig of imaginary beer to heal. Grants Instant Health II, Absorption I (10s), and Saturation. 25s cooldown.",
+
+  "origin.warbornorigins.wild_dwarf.name": "Wild Dwarf",
+  "origin.warbornorigins.wild_dwarf.description": "Wandering traders and survivors of the wilds. They haggle better prices from villagers but are vulnerable to explosions. At night they become faster but weaker.",
+
+  "power.warbornorigins.wild_dwarf/wild_stature.name": "Wild Stature",
+  "power.warbornorigins.wild_dwarf/wild_stature.description": "Wild Dwarves are short but nimble, built for travel and trade. (0.85x height via Pehkui)",
+
+  "power.warbornorigins.wild_dwarf/born_trader.name": "Born Trader",
+  "power.warbornorigins.wild_dwarf/born_trader.description": "You are a natural haggler. Permanent Hero of the Village I effect (better villager prices).",
+
+  "power.warbornorigins.wild_dwarf/blast_vulnerable.name": "Blast Vulnerable",
+  "power.warbornorigins.wild_dwarf/blast_vulnerable.description": "Your small frame makes you especially vulnerable to explosions. +20% explosion damage taken.",
+
+  "power.warbornorigins.wild_dwarf/nocturnal_surge.name": "Nocturnal Surge",
+  "power.warbornorigins.wild_dwarf/nocturnal_surge.description": "At night: +20% speed and Weakness I. Holding a shield negates the weakness but also removes the speed bonus.",
+
+  "power.warbornorigins.wild_dwarf/energy_shockwave.name": "Energy Shockwave",
+  "power.warbornorigins.wild_dwarf/energy_shockwave.description": "Ability: Release an energy shockwave pushing all enemies within 5 blocks back, dealing 3 damage + Slowness. 18s cooldown.",
+
+  "power.warbornorigins.night_vision.name": "Night Vision",
+  "power.warbornorigins.night_vision.description": "Your eyes are adapted to the dark. Permanent Night Vision.",
+
+  "origin.warbornorigins.siren.name": "Siren",
+  "origin.warbornorigins.siren.description": "Enchanting water-dwellers who thrive beneath the waves. Sirens gain Dolphin's Grace and regeneration in water, but are weaker on land. Their mesmerizing song can pacify even the most hostile creatures.",
+
+  "power.warbornorigins.siren/siren_stature.name": "Siren Stature",
+  "power.warbornorigins.siren/siren_stature.description": "Sirens have a slender, graceful form adapted for water. (0.9x width via Pehkui)",
+
+  "power.warbornorigins.siren/aquatic_grace.name": "Aquatic Grace",
+  "power.warbornorigins.siren/aquatic_grace.description": "In water: Dolphin's Grace, Regeneration I, and Water Breathing.",
+
+  "power.warbornorigins.siren/land_weakness.name": "Land Weakness",
+  "power.warbornorigins.siren/land_weakness.description": "On land: -15% movement speed, -20% attack damage.",
+
+  "power.warbornorigins.siren/siren_trader.name": "Siren's Charm",
+  "power.warbornorigins.siren/siren_trader.description": "Your enchanting presence gives you better trades with villagers. Permanent Hero of the Village I.",
+
+  "power.warbornorigins.siren/sirens_song.name": "Siren's Song",
+  "power.warbornorigins.siren/sirens_song.description": "Ability: Sing to pacify hostile mobs within 10 blocks (Slowness V + Weakness III for 8s). 30s cooldown.",
+
+  "origin.warbornorigins.piglin_kind.name": "Piglin Kind",
+  "origin.warbornorigins.piglin_kind.description": "Nether-born warriors forged in fire. Piglin Kind are immune to fire and feed on flames, but water burns them. They are stronger in the Nether and weaker in the Overworld.",
+
+  "power.warbornorigins.piglin_kind/piglin_stature.name": "Piglin Stature",
+  "power.warbornorigins.piglin_kind/piglin_stature.description": "Piglin Kind are slightly larger and broader than humans. (1.05x height, 1.05x width via Pehkui)",
+
+  "power.warbornorigins.piglin_kind/fire_resistant.name": "Fire Resistant",
+  "power.warbornorigins.piglin_kind/fire_resistant.description": "Born of the Nether, you are immune to all fire and lava damage. Permanent Fire Resistance.",
+
+  "power.warbornorigins.piglin_kind/fire_hunger.name": "Fire Hunger",
+  "power.warbornorigins.piglin_kind/fire_hunger.description": "Fire sustains you. Standing in fire or lava restores your hunger (Saturation).",
+
+  "power.warbornorigins.piglin_kind/hydrophobia.name": "Hydrophobia",
+  "power.warbornorigins.piglin_kind/hydrophobia.description": "Water burns your Nether-forged skin. 1 damage every 1.5s in water or rain. Aqua Affinity helmet negates.",
+
+  "power.warbornorigins.piglin_kind/nether_strength.name": "Nether Strength",
+  "power.warbornorigins.piglin_kind/nether_strength.description": "Nether: +25% damage, +10% speed. Overworld: -15% damage, -10% speed.",
+
+  "power.warbornorigins.piglin_kind/unholy_deal.name": "Unholy Deal",
+  "power.warbornorigins.piglin_kind/unholy_deal.description": "Ability: Sacrifice 4 health for Strength II (15s) and Speed I (10s). Requires >6 health. 20s cooldown.",
+
+  "origin.warbornorigins.human.name": "Human",
+  "origin.warbornorigins.human.description": "Classic Minecraft adventurers with no special advantages or disadvantages.",
+
+  "origin.warbornorigins.plague_victim.name": "Plague Victim",
+  "origin.warbornorigins.plague_victim.description": "Rotting carriers of a cruel affliction. Undead leave them alone and poison cannot harm them, but villagers shun them and sleep is impossible.",
+
+  "power.warbornorigins.plague_victim/plague_immunity.name": "Plague Immunity",
+  "power.warbornorigins.plague_victim/plague_immunity.description": "Your diseased body no longer reacts to poison.",
+
+  "power.warbornorigins.plague_victim/contagious.name": "Contagious",
+  "power.warbornorigins.plague_victim/contagious.description": "Villagers fear your sickness and refuse to trade with you.",
+
+  "power.warbornorigins.plague_victim/insomniac.name": "Insomniac",
+  "power.warbornorigins.plague_victim/insomniac.description": "Relentless pain keeps you from sleeping.",
+
+  "power.warbornorigins.plague_victim/poison_cloud.name": "Poison Cloud",
+  "power.warbornorigins.plague_victim/poison_cloud.description": "Ability: Release a poisonous cloud that damages and poisons nearby living creatures. 25s cooldown.",
+
+  "origin.warbornorigins.revenant.name": "Revenant",
+  "origin.warbornorigins.revenant.description": "Undead warriors sustained by stolen life essence. They cannot tend crops, shrug off poison and wither, and command the dead, but are vulnerable to Smite and starvation.",
+
+  "power.warbornorigins.revenant/essence_extraction.name": "Essence Extraction",
+  "power.warbornorigins.revenant/essence_extraction.description": "On hit: siphon life from living targets, dealing +1 magic damage and granting Absorption I for 3s.",
+
+  "power.warbornorigins.revenant/black_thumb.name": "Black Thumb",
+  "power.warbornorigins.revenant/black_thumb.description": "Life withers at your touch. You cannot harvest crops.",
+
+  "power.warbornorigins.revenant/necrotic_resilience.name": "Necrotic Resilience",
+  "power.warbornorigins.revenant/necrotic_resilience.description": "Deathly energies fortify your body against poison and wither.",
+
+  "power.warbornorigins.revenant/smite_vulnerability.name": "Consecrated Weakness",
+  "power.warbornorigins.revenant/smite_vulnerability.description": "Holy strikes tear through your cursed form. +60% damage from Smite-enchanted weapons.",
+
+  "power.warbornorigins.revenant/hunger_vulnerability.name": "Starved Husk",
+  "power.warbornorigins.revenant/hunger_vulnerability.description": "Without sustenance, your body collapses rapidly. +100% damage from starvation.",
+
+  "power.warbornorigins.revenant/disturbed.name": "Disturbed",
+  "power.warbornorigins.revenant/disturbed.description": "Rest eludes the dead. You cannot sleep.",
+
+  "power.warbornorigins.revenant/revenance.name": "Revenance",
+  "power.warbornorigins.revenant/revenance.description": "Ability: Summon undead servants from the grave to fight at your side. 35s cooldown.",
+
+  "text.warbornorigins.plague_victim.contagious_villager": "Villagers refuse to trade with you.",
+  "text.warbornorigins.plague_victim.no_sleep": "Your agony keeps you awake.",
+  "text.warbornorigins.revenant.black_thumb": "Your cursed touch withers crops.",
+  "text.warbornorigins.revenant.no_sleep": "The dead do not sleep."
+}

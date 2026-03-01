@@ -1,0 +1,92 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "minecraft:item/paper"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "custom_model_data": 1001
+            },
+            "model": "warbornorigins:item/origin_goblin"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1002
+            },
+            "model": "warbornorigins:item/origin_arachnae"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1003
+            },
+            "model": "warbornorigins:item/origin_orc"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1004
+            },
+            "model": "warbornorigins:item/origin_mountain_dwarf"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1005
+            },
+            "model": "warbornorigins:item/origin_wild_dwarf"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1006
+            },
+            "model": "warbornorigins:item/origin_dark_dwarf"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1007
+            },
+            "model": "warbornorigins:item/origin_wood_elf"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1008
+            },
+            "model": "warbornorigins:item/origin_high_elf"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1009
+            },
+            "model": "warbornorigins:item/origin_moon_elf"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1010
+            },
+            "model": "warbornorigins:item/origin_human"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1011
+            },
+            "model": "warbornorigins:item/origin_siren"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1012
+            },
+            "model": "warbornorigins:item/origin_revenant"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1013
+            },
+            "model": "warbornorigins:item/origin_piglin_kind"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 1014
+            },
+            "model": "warbornorigins:item/origin_plague_victim"
+        }
+    ]
+}

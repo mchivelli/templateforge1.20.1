@@ -1,0 +1,36 @@
+{
+  "type": "origins:multiple",
+  "name": "Battering Ram",
+  "description": "While sprinting, you ram into enemies and knock them back with tremendous force.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/positive.png",
+      "text": "+100% knockback while sprinting, +10% attack damage while sprinting"
+    }
+  ],
+  "sprint_knockback": {
+    "type": "origins:conditioned_attribute",
+    "tick_rate": 20,
+    "modifier": {
+      "attribute": "minecraft:generic.attack_knockback",
+      "operation": "addition",
+      "value": 2.0
+    },
+    "condition": {
+      "type": "origins:sprinting"
+    }
+  },
+  "sprint_damage": {
+    "type": "origins:conditioned_attribute",
+    "tick_rate": 20,
+    "modifier": {
+      "attribute": "minecraft:generic.attack_damage",
+      "operation": "multiply_base",
+      "value": 0.1
+    },
+    "condition": {
+      "type": "origins:sprinting"
+    }
+  }
+}

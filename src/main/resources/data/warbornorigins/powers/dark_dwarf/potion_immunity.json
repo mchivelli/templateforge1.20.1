@@ -1,0 +1,72 @@
+{
+  "type": "origins:multiple",
+  "name": "Potion Immunity",
+  "description": "Your cursed blood nullifies most potion effects, both beneficial and harmful. Regeneration still flows through your veins.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/info.png",
+      "text": "Immune to all potion effects except Regeneration"
+    }
+  ],
+  "poison_immune": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:poison"
+  },
+  "wither_immune": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:wither"
+  },
+  "slowness_immune": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:slowness"
+  },
+  "weakness_immune": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:weakness"
+  },
+  "harming_immune": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:instant_damage"
+  },
+  "nausea_immune": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:nausea"
+  },
+  "blindness_immune": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:blindness"
+  },
+  "hunger_immune": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:hunger"
+  },
+  "speed_immune": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:speed"
+  },
+  "strength_immune": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:strength"
+  },
+  "healing_immune": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:instant_health"
+  },
+  "resistance_immune": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:resistance"
+  },
+  "fire_res_immune": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:fire_resistance"
+  },
+  "invisibility_immune": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:invisibility"
+  },
+  "night_vision_immune": {
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:night_vision"
+  }
+}

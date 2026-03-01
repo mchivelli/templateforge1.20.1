@@ -1,0 +1,33 @@
+{
+  "type": "origins:multiple",
+  "name": "Spider Friend",
+  "description": "Spiders and Cave Spiders recognize you as one of their own and will not attack you.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/positive.png",
+      "text": "Spiders and Cave Spiders are passive towards you"
+    }
+  ],
+  "spider_passive": {
+    "type": "origins:entity_group",
+    "group": "arthropod"
+  },
+  "spider_neutral": {
+    "type": "origins:mob_category",
+    "category": "neutral",
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:entity_type",
+          "entity_type": "minecraft:spider"
+        },
+        {
+          "type": "origins:entity_type",
+          "entity_type": "minecraft:cave_spider"
+        }
+      ]
+    }
+  }
+}

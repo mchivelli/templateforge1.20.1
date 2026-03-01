@@ -1,0 +1,12 @@
+{
+  "type": "origins:ignore_water",
+  "name": "Dense Body",
+  "description": "Your heavy dwarven body sinks like a stone in water. You cannot swim.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/negative.png",
+      "text": "Cannot swim — sinks in water immediately"
+    }
+  ]
+}

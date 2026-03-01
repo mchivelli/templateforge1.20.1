@@ -1,0 +1,23 @@
+{
+  "type": "origins:multiple",
+  "name": "Web Walker",
+  "description": "You move freely through cobwebs without being slowed.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/positive.png",
+      "text": "Not slowed by cobwebs"
+    }
+  ],
+  "web_speed": {
+    "type": "origins:modify_slipperiness",
+    "block_condition": {
+      "type": "origins:block",
+      "block": "minecraft:cobweb"
+    },
+    "modifier": {
+      "operation": "set_total",
+      "value": 0.6
+    }
+  }
+}

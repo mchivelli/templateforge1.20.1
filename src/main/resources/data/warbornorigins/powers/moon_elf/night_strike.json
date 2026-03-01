@@ -1,0 +1,58 @@
+{
+  "type": "origins:multiple",
+  "name": "Night Strike",
+  "description": "Attacking from stealth at night deals devastating bonus damage, but breaks your invisibility.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/star.png",
+      "text": "2x bonus damage when attacking while invisible and sneaking at night"
+    }
+  ],
+  "stealth_strike": {
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+      "operation": "multiply_total",
+      "value": 2.0
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:invisible"
+        },
+        {
+          "type": "origins:sneaking"
+        },
+        {
+          "type": "origins:resource",
+          "resource": "warbornorigins:moon_elf/moonlit_veil_stealth_cooldown",
+          "comparison": "<",
+          "compare_to": 1
+        }
+      ]
+    },
+    "self_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:clear_effect",
+          "effect": "minecraft:invisibility"
+        },
+        {
+          "type": "origins:change_resource",
+          "resource": "warbornorigins:moon_elf/moonlit_veil_stealth_cooldown",
+          "change": 100
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "playsound minecraft:entity.player.attack.crit player @a ~ ~ ~ 1.0 0.8"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "particle minecraft:crit ~ ~1 ~ 0.3 0.3 0.3 0.1 10 normal"
+        }
+      ]
+    }
+  }
+}

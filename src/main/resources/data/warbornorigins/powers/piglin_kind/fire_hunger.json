@@ -1,0 +1,35 @@
+{
+  "type": "origins:multiple",
+  "name": "Fire Hunger",
+  "description": "Fire sustains you. Standing in fire or lava restores your hunger.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/positive.png",
+      "text": "Saturation when standing in fire, on fire, or in lava"
+    }
+  ],
+  "fire_feed": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "effect give @s minecraft:saturation 2 0 true"
+    },
+    "interval": 40,
+    "condition": {
+      "type": "origins:on_fire"
+    }
+  },
+  "lava_feed": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "effect give @s minecraft:saturation 2 1 true"
+    },
+    "interval": 40,
+    "condition": {
+      "type": "origins:submerged_in",
+      "fluid": "minecraft:lava"
+    }
+  }
+}

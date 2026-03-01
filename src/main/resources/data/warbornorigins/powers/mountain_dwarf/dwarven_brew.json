@@ -1,0 +1,46 @@
+{
+  "type": "origins:active_self",
+  "name": "Dwarven Brew",
+  "description": "Take a hearty swig of imaginary dwarven beer to heal yourself.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/active.png",
+      "text": "Ability: Heal 6 health (3 hearts), grants Absorption I for 10s. 25s cooldown."
+    }
+  ],
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "effect give @s minecraft:instant_health 1 1"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "effect give @s minecraft:absorption 200 0"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "effect give @s minecraft:saturation 1 0"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "playsound minecraft:entity.generic.drink player @s ~ ~ ~ 1.0 0.8"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "particle minecraft:heart ~ ~2 ~ 0.3 0.2 0.3 0.1 5 normal"
+      }
+    ]
+  },
+  "cooldown": 500,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/resource_bar.png",
+    "bar_index": 6
+  },
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  }
+}

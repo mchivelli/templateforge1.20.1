@@ -1,0 +1,18 @@
+{
+  "powers": [
+    "warbornorigins:dark_dwarf/dark_stature",
+    "warbornorigins:dark_dwarf/soul_mending",
+    "warbornorigins:dark_dwarf/cursed",
+    "warbornorigins:dark_dwarf/potion_immunity",
+    "warbornorigins:dark_dwarf/chains_of_death",
+    "warbornorigins:mine_faster"
+  ],
+  "icon": {
+    "item": "minecraft:paper",
+    "tag": "{CustomModelData:1006}"
+  },
+  "order": 6,
+  "impact": 3,
+  "name": "Dark Dwarf",
+  "description": "Cursed dwarves bound to soul fire. Their tainted blood nullifies potions and makes Smite devastating. They mend near soul light, and their chains of death pierce all who stand in their way."
+}

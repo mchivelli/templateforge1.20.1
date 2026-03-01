@@ -1,0 +1,53 @@
+{
+  "type": "origins:multiple",
+  "name": "Soul Bolt",
+  "description": "Hurl a spectral soul bolt that inflicts Wither on impact. Hold Shift to fire a charged bolt for greater damage.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/active.png",
+      "text": "Ability: Fire a soul bolt (wither skull) — Shift for charged bolt. 20s cooldown."
+    }
+  ],
+  "soul_bolt_normal": {
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:wither_skull",
+    "cooldown": 400,
+    "count": 1,
+    "speed": 0.5,
+    "divergence": 1.0,
+    "tag": "{dangerous:0b}",
+    "hud_render": {
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 5
+    },
+    "key": {
+      "key": "key.origins.primary_active",
+      "continuous": false
+    },
+    "condition": {
+      "type": "origins:sneaking",
+      "inverted": true
+    }
+  },
+  "soul_bolt_charged": {
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:wither_skull",
+    "cooldown": 400,
+    "count": 1,
+    "speed": 0.7,
+    "divergence": 0.5,
+    "tag": "{dangerous:1b}",
+    "hud_render": {
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 5
+    },
+    "key": {
+      "key": "key.origins.primary_active",
+      "continuous": false
+    },
+    "condition": {
+      "type": "origins:sneaking"
+    }
+  }
+}

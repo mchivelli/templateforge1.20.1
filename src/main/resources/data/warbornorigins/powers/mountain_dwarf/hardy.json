@@ -1,0 +1,17 @@
+{
+  "type": "origins:attribute",
+  "name": "Hardy",
+  "description": "Your stocky Mountain Dwarf build grants you extra health.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/positive.png",
+      "text": "+6 max health (3 extra hearts)"
+    }
+  ],
+  "modifier": {
+    "attribute": "minecraft:generic.max_health",
+    "value": 6.0,
+    "operation": "addition"
+  }
+}

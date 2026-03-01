@@ -1,0 +1,19 @@
+{
+  "powers": [
+    "warbornorigins:goblin/goblin_stature",
+    "warbornorigins:goblin/gold_affinity",
+    "warbornorigins:goblin/haggler",
+    "warbornorigins:goblin/iron_stomach",
+    "warbornorigins:goblin/lucky_fingers",
+    "warbornorigins:goblin/skinny",
+    "warbornorigins:carnivore"
+  ],
+  "icon": {
+    "item": "minecraft:paper",
+    "tag": "{CustomModelData:1001}"
+  },
+  "order": 3,
+  "impact": 2,
+  "name": "Goblin",
+  "description": "Small and cunning, Goblins are obsessed with gold and treasure. Their strong stomachs and nimble fingers make them excellent scavengers, though villagers charge them dearly."
+}

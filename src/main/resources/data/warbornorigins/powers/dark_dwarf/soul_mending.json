@@ -1,0 +1,54 @@
+{
+  "type": "origins:multiple",
+  "name": "Soul Mending",
+  "description": "The souls of the damned sustain you. You slowly heal when near soul light sources (Soul Torches, Soul Lanterns, Soul Campfires).",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/positive.png",
+      "text": "Regeneration I near soul fire light sources (8 block radius)"
+    }
+  ],
+  "soul_torch_heal": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:regeneration",
+        "duration": 100,
+        "amplifier": 0,
+        "is_ambient": true,
+        "show_particles": true,
+        "show_icon": true
+      }
+    },
+    "interval": 40,
+    "condition": {
+      "type": "origins:block_in_radius",
+      "block_condition": {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:block",
+            "block": "minecraft:soul_torch"
+          },
+          {
+            "type": "origins:block",
+            "block": "minecraft:soul_wall_torch"
+          },
+          {
+            "type": "origins:block",
+            "block": "minecraft:soul_lantern"
+          },
+          {
+            "type": "origins:block",
+            "block": "minecraft:soul_campfire"
+          }
+        ]
+      },
+      "radius": 8,
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  }
+}

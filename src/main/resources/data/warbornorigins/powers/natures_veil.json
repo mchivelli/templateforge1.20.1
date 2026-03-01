@@ -1,0 +1,126 @@
+{
+  "type": "origins:multiple",
+  "name": "Nature's Veil",
+  "description": "Ferns and tall grass hide you and provide night vision.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/positive.png",
+      "text": "Invisibility in ferns and tall grass only. Lingers 1.5s after leaving."
+    }
+  ],
+  "veil_resource": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 30,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 1
+    },
+    "min_action": {
+      "type": "origins:nothing"
+    },
+    "max_action": {
+      "type": "origins:nothing"
+    }
+  },
+  "fill_resource": {
+    "type": "origins:action_over_time",
+    "interval": 4,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_veil_resource",
+      "change": 8
+    },
+    "condition": {
+      "type": "origins:in_block_anywhere",
+      "block_condition": {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:block",
+            "block": "minecraft:fern"
+          },
+          {
+            "type": "origins:block",
+            "block": "minecraft:large_fern"
+          },
+          {
+            "type": "origins:block",
+            "block": "minecraft:tall_grass"
+          }
+        ]
+      },
+      "comparison": ">=",
+      "compare_to": 1
+    }
+  },
+  "drain_resource": {
+    "type": "origins:action_over_time",
+    "interval": 4,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_veil_resource",
+      "change": -4
+    },
+    "condition": {
+      "type": "origins:in_block_anywhere",
+      "block_condition": {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:block",
+            "block": "minecraft:fern"
+          },
+          {
+            "type": "origins:block",
+            "block": "minecraft:large_fern"
+          },
+          {
+            "type": "origins:block",
+            "block": "minecraft:tall_grass"
+          }
+        ]
+      },
+      "comparison": ">=",
+      "compare_to": 1,
+      "inverted": true
+    }
+  },
+  "ghost_form": {
+    "type": "origins:model_color",
+    "red": 0.6,
+    "green": 0.9,
+    "blue": 0.6,
+    "alpha": 0.15,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:*_veil_resource",
+      "comparison": ">",
+      "compare_to": 0
+    }
+  },
+  "hide_from_mobs": {
+    "type": "origins:invisibility",
+    "render_armor": false,
+    "render_outline": true,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:*_veil_resource",
+      "comparison": ">",
+      "compare_to": 0
+    }
+  },
+  "night_vision": {
+    "type": "origins:night_vision",
+    "strength": 1.0,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:*_veil_resource",
+      "comparison": ">",
+      "compare_to": 0
+    }
+  }
+}

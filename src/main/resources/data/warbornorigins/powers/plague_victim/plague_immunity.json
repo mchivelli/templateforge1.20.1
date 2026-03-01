@@ -1,0 +1,6 @@
+{
+  "type": "origins:effect_immunity",
+  "effect": "minecraft:poison",
+  "name": "Plague Immunity",
+  "description": "Your diseased body no longer reacts to poison."
+}

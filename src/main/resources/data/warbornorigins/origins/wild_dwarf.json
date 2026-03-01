@@ -1,0 +1,18 @@
+{
+  "powers": [
+    "warbornorigins:wild_dwarf/wild_stature",
+    "warbornorigins:wild_dwarf/born_trader",
+    "warbornorigins:wild_dwarf/blast_vulnerable",
+    "warbornorigins:wild_dwarf/nocturnal_surge",
+    "warbornorigins:wild_dwarf/energy_shockwave",
+    "warbornorigins:mine_faster"
+  ],
+  "icon": {
+    "item": "minecraft:paper",
+    "tag": "{CustomModelData:1005}"
+  },
+  "order": 8,
+  "impact": 2,
+  "name": "Wild Dwarf",
+  "description": "Wandering survivors of the wilds. They haggle better prices but are vulnerable to explosions. At night they become faster but weaker—a shield negates this weakness at the cost of speed. Their energy shockwave pushes enemies back."
+}

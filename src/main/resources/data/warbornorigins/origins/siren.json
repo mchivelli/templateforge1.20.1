@@ -1,0 +1,18 @@
+{
+  "powers": [
+    "warbornorigins:siren/siren_stature",
+    "warbornorigins:siren/aquatic_grace",
+    "warbornorigins:siren/land_weakness",
+    "warbornorigins:siren/siren_trader",
+    "warbornorigins:siren/sirens_song",
+    "warbornorigins:night_vision"
+  ],
+  "icon": {
+    "item": "minecraft:paper",
+    "tag": "{CustomModelData:1011}"
+  },
+  "order": 9,
+  "impact": 3,
+  "name": "Siren",
+  "description": "Enchanting water-dwellers who thrive beneath the waves. Sirens gain Dolphin's Grace and regeneration in water, but weaken on land. Their mesmerizing song pacifies hostile creatures."
+}

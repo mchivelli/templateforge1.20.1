@@ -1,0 +1,19 @@
+{
+  "type": "origins:multiple",
+  "name": "Ravenous",
+  "description": "Your massive Orc body burns through food quickly. You get hungrier faster.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/negative.png",
+      "text": "Hunger depletes 50% faster (exhaust rate increased)"
+    }
+  ],
+  "increased_exhaustion": {
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+      "operation": "multiply_base",
+      "value": 0.5
+    }
+  }
+}

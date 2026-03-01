@@ -1,0 +1,102 @@
+{
+  "type": "origins:multiple",
+  "name": "Unholy Deal",
+  "description": "Sacrifice your own life force for devastating power. Trade health for a massive damage boost.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/active.png",
+      "text": "Ability: Sacrifice 4 health for Strength II (15s) and Speed I (10s). 20s cooldown."
+    }
+  ],
+  "deal_cooldown": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 400,
+    "start_value": 0,
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/resource_bar.png",
+      "bar_index": 9,
+      "condition": {
+        "type": "origins:resource",
+        "resource": "*:*_deal_cooldown",
+        "comparison": ">",
+        "compare_to": 0
+      }
+    }
+  },
+  "cooldown_tick": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_deal_cooldown",
+      "change": -4
+    },
+    "interval": 4,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:*_deal_cooldown",
+      "comparison": ">",
+      "compare_to": 0
+    }
+  },
+  "activate_deal": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "damage @s 4 minecraft:magic"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "effect give @s minecraft:strength 15 1"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "effect give @s minecraft:speed 10 0"
+        },
+        {
+          "type": "origins:change_resource",
+          "resource": "warbornorigins:piglin_kind/unholy_deal_deal_cooldown",
+          "change": 400
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "particle minecraft:soul_fire_flame ~ ~1 ~ 0.4 0.5 0.4 0.05 20 normal"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "particle minecraft:damage_indicator ~ ~1 ~ 0.3 0.3 0.3 0.1 8 normal"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "playsound minecraft:entity.wither.hurt hostile @a ~ ~ ~ 0.6 0.5"
+        }
+      ]
+    },
+    "cooldown": 1,
+    "key": {
+      "key": "key.origins.primary_active",
+      "continuous": false
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "warbornorigins:piglin_kind/unholy_deal_deal_cooldown",
+          "comparison": "<=",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:health",
+          "comparison": ">",
+          "compare_to": 6.0
+        }
+      ]
+    }
+  }
+}

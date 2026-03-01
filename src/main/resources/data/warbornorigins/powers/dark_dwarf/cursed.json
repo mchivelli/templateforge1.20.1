@@ -1,0 +1,29 @@
+{
+  "type": "origins:modify_damage_taken",
+  "name": "Cursed",
+  "description": "A dark curse clings to your soul. Smite-enchanted weapons deal devastating damage to you, far worse than Sharpness.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/negative.png",
+      "text": "+75% damage from Smite-enchanted weapons"
+    }
+  ],
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "value": 0.75
+  },
+  "damage_condition": {
+    "type": "origins:attacker",
+    "entity_condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:enchantment",
+        "enchantment": "minecraft:smite",
+        "comparison": ">=",
+        "compare_to": 1
+      }
+    }
+  }
+}

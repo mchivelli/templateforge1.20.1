@@ -1,0 +1,19 @@
+{
+  "powers": [
+    "warbornorigins:high_elf/arcane_stature",
+    "warbornorigins:high_elf/fragile",
+    "warbornorigins:high_elf/arcane_mastery",
+    "warbornorigins:high_elf/encumbered",
+    "warbornorigins:high_elf/arcane_surge",
+    "warbornorigins:high_elf/ethereal",
+    "warbornorigins:vegetarian"
+  ],
+  "icon": {
+    "item": "minecraft:paper",
+    "tag": "{CustomModelData:1008}"
+  },
+  "order": 2,
+  "impact": 2,
+  "name": "High Elves",
+  "description": "Masters of the arcane arts, High Elves trade physical resilience for magical prowess. Their innate talent makes them formidable spellcasters, but heavy armor encumbers their graceful forms."
+}

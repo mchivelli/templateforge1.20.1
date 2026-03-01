@@ -1,0 +1,20 @@
+{
+  "powers": [
+    "warbornorigins:revenant/undeadge",
+    "warbornorigins:revenant/essence_extraction",
+    "warbornorigins:revenant/black_thumb",
+    "warbornorigins:revenant/necrotic_resilience",
+    "warbornorigins:revenant/smite_vulnerability",
+    "warbornorigins:revenant/hunger_vulnerability",
+    "warbornorigins:revenant/disturbed",
+    "warbornorigins:revenant/revenance"
+  ],
+  "icon": {
+    "item": "minecraft:paper",
+    "tag": "{CustomModelData:1012}"
+  },
+  "order": 13,
+  "impact": 3,
+  "name": "Revenant",
+  "description": "Betrayers who forged Mortanis's prison, cursed to undeath. Denied Luminara's gifts, they cannot harvest crops and are burned by Smite. Yet, the dead recognize them as kin, and they sustain themselves by draining essence from the living."
+}

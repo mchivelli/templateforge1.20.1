@@ -1,0 +1,31 @@
+{
+  "type": "origins:modify_damage_dealt",
+  "name": "Arcane Mastery",
+  "description": "You have mastered the arcane arts, taking less damage from magic.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/positive.png",
+      "text": "+20% magic resistance"
+    }
+  ],
+  "modifier": {
+    "name": "Arcane mastery magic resistance",
+    "value": -0.2,
+    "operation": "multiply_base"
+  },
+  "damage_condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:name",
+        "name": "magic"
+      },
+      {
+        "type": "origins:name",
+        "name": "indirectMagic"
+      }
+    ]
+  },
+  "self": true
+}

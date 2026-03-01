@@ -1,0 +1,71 @@
+{
+  "type": "origins:active_self",
+  "name": "Energy Shockwave",
+  "description": "Release a powerful energy shockwave that pushes all nearby enemies back.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/active.png",
+      "text": "Ability: Push all enemies within 5 blocks back with knockback + 3 damage. 18s cooldown."
+    }
+  ],
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:area_of_effect",
+        "radius": 5.0,
+        "shape": "sphere",
+        "bientity_action": {
+          "type": "origins:target_action",
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:add_velocity",
+                "space": "velocity_horizontal_normalized",
+                "z": 1.5,
+                "y": 0.4
+              },
+              {
+                "type": "origins:execute_command",
+                "command": "damage @s 3 minecraft:mob_attack"
+              }
+            ]
+          }
+        },
+        "bientity_condition": {
+          "type": "origins:target_condition",
+          "condition": {
+            "type": "origins:living"
+          }
+        }
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "particle minecraft:sweep_attack ~ ~0.5 ~ 2 0.3 2 0.1 15 normal"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "particle minecraft:explosion ~ ~0.5 ~ 1.5 0.3 1.5 0.05 8 normal"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "playsound minecraft:entity.generic.explode player @a ~ ~ ~ 0.5 1.2"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 1.0 0.6"
+      }
+    ]
+  },
+  "cooldown": 360,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/resource_bar.png",
+    "bar_index": 7
+  },
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  }
+}

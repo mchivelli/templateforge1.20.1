@@ -1,0 +1,32 @@
+{
+  "type": "origins:multiple",
+  "name": "Fragile",
+  "description": "Your slender elven frame is more susceptible to physical harm.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/negative.png",
+      "text": "-6 max health, +15% physical damage taken"
+    }
+  ],
+  "health_reduction": {
+    "type": "origins:attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.max_health",
+      "value": -6,
+      "operation": "addition"
+    }
+  },
+  "physical_vulnerability": {
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "value": 0.15
+    },
+    "damage_condition": {
+      "type": "origins:in_tag",
+      "tag": "warbornorigins:is_magic",
+      "inverted": true
+    }
+  }
+}

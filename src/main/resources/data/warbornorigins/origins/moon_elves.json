@@ -1,0 +1,21 @@
+{
+  "powers": [
+    "warbornorigins:moon_elf/lunar_stature",
+    "warbornorigins:moon_elf/nimble",
+    "warbornorigins:moon_elf/moonlit_veil",
+    "warbornorigins:moon_elf/night_strike",
+    "warbornorigins:moon_elf/assassins_focus",
+    "warbornorigins:moon_elf/hydrophobia",
+    "warbornorigins:moon_elf/fragile",
+    "warbornorigins:moon_elf/ethereal",
+    "warbornorigins:vegetarian"
+  ],
+  "icon": {
+    "item": "minecraft:paper",
+    "tag": "{CustomModelData:1009}"
+  },
+  "order": 1,
+  "impact": 3,
+  "name": "Moon Elves",
+  "description": "Children of the night, Moon Elves are deadly assassins who meld with shadows. Their lunar-touched skin burns in water, but under moonlight they become truly invisible."
+}

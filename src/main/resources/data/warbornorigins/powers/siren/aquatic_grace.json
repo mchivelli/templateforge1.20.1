@@ -1,0 +1,48 @@
+{
+  "type": "origins:multiple",
+  "name": "Aquatic Grace",
+  "description": "Water is your natural home. You gain Dolphin's Grace and Regeneration while submerged, and can breathe underwater.",
+  "badges": [
+    {
+      "type": "origins:tooltip",
+      "sprite": "origins:textures/gui/badge/positive.png",
+      "text": "In water: Dolphin's Grace, Regeneration I, Water Breathing"
+    }
+  ],
+  "dolphins_grace": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "effect give @s minecraft:dolphins_grace 4 0 true"
+    },
+    "interval": 60,
+    "condition": {
+      "type": "origins:submerged_in",
+      "fluid": "minecraft:water"
+    }
+  },
+  "water_regen": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "effect give @s minecraft:regeneration 4 0 true"
+    },
+    "interval": 60,
+    "condition": {
+      "type": "origins:submerged_in",
+      "fluid": "minecraft:water"
+    }
+  },
+  "water_breathing": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "effect give @s minecraft:water_breathing 14 0 true"
+    },
+    "interval": 200,
+    "condition": {
+      "type": "origins:submerged_in",
+      "fluid": "minecraft:water"
+    }
+  }
+}

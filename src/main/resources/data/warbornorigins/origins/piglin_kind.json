@@ -1,0 +1,19 @@
+{
+  "powers": [
+    "warbornorigins:piglin_kind/piglin_stature",
+    "warbornorigins:piglin_kind/fire_resistant",
+    "warbornorigins:piglin_kind/fire_hunger",
+    "warbornorigins:piglin_kind/hydrophobia",
+    "warbornorigins:piglin_kind/nether_strength",
+    "warbornorigins:piglin_kind/unholy_deal",
+    "warbornorigins:night_vision"
+  ],
+  "icon": {
+    "item": "minecraft:paper",
+    "tag": "{CustomModelData:1013}"
+  },
+  "order": 10,
+  "impact": 3,
+  "name": "Piglin Kind",
+  "description": "Cursed remnants of mortal greed punished by Mortanis. Twisted into swine-like bodies, Piglin Kind crave gold. Bound to the Nether, these Warborn embrace their curse, turning survival into a weapon of dominion."
+}
